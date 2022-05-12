@@ -19,10 +19,10 @@ public class EX3 {
          System.out.println(num1 + op + num2);
          //방법2
          Scanner scan = new Scanner(System.in);
-         System.out.println("정수와 산술연산자를 입력하세요(에 1 + 2) : ")
+         System.out.println("정수와 산술연산자를 입력하세요(에 1 + 2) : ");
          int num3 = scan.nextInt();
          int num4 = scan.nextInt();
-         char op1  = scan.next()charAt(0);
+         char op1  = scan.next().charAt(0);
          System.out.println(num3 + op1 + num4);        
          scan.close();
 	}

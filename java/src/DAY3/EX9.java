@@ -9,10 +9,10 @@ public class EX9 {
          * 산술 연산자가 아닌 경우 ??은 산술연산자가 아닙니다로 출력
          */
         Scanner scan = new Scanner(System.in);
-        System.out.println("두 정수와 산술연산자를 입력하세요(에 : 1 / 2) : ")
+        System.out.println("두 정수와 산술연산자를 입력하세요(에 : 1 / 2) : ");
         int num1 = scan.nextInt();
         int num2 = scan.nextInt();
-        char op  = scan.next()charAt(0);
+        char op  = scan.next().charAt(0);
         System.out.println(num1 + op + num2);
         
         switch(op) {

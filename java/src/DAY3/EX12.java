@@ -12,7 +12,7 @@ public class EX12 {
 		 * 반복횟수 : i는 1부터 10까지 1씩 증가
 		 * 규칙성 : 2*i를 출력
 		 */ 	  
-         int 
+         int i;
 		/* 1부터 10사이의 짝수를 출력하는 코드를 작성하세요.
 		 * 2
 		 * 4
@@ -39,5 +39,5 @@ public class EX12 {
          for(i=2; i<=10; i+=2) {
         		 System.out.println(i);
 	}
-
+  }
 }

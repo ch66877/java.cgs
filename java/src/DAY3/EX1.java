@@ -10,16 +10,16 @@ public class EX1 {
         /* 테스트 성적 : 90 90 91
          */
 		Scanner scan = new Scanner(System.in);	
-		System.out.println("수학"):
+		System.out.println("수학");
 		int num1 = scan.nextInt();
-	    System.out.println("영어"):
+	    System.out.println("영어");
 	    int num2 = scan.nextInt();
-	    System.out.println("국어"):
+	    System.out.println("국어");
 	    int num3 = scan.nextInt();	
-	    System.out.println("총점은" +(num1 + num + num);
+	    System.out.println("총점은" +(num1 + num2 + num3);
 	    int num = scan.nextInt();
 	   
-	    System.out.println("평균은" +(num1 + num + num);
+	    System.out.println("평균은" +(num1 + num2 + num3);
         scan.close();
 	}
 	

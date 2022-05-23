@@ -57,7 +57,6 @@ public class BaseballGame implements ConsoleProgram{
 			printRecord();
 			break;
 		case 3:
-
 			break;
 		default:
 			System.out.println("잘못된 메뉴를 선택했습니다.");

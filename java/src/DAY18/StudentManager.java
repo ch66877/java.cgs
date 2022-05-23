@@ -28,7 +28,7 @@ public class StudentManager implements ConsoleProgram{
 		 System.out.println("1. 학생정보 입력");
 		 System.out.println("2. 학생정보 출력");
 		 System.out.println("3. 학생정보 수정");
-		 System.out.println("4. 학생정보 입력");
+		 System.out.println("4. 학생정보 삭제");
 		 System.out.println("5. 프로그램 종료");
 		 System.out.println("메뉴를 선택하세요 : ");
 		 int menu = scan.nextInt();

@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Ex05_FileMain {
+public class FileMain {
 
 	public static void main(String[] args) {
 		//파일들을 관리할 리스트

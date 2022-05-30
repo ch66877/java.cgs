@@ -10,6 +10,7 @@ import DAY14.ConsoleProgram;
 
 public class ScoreManager implements DAY14.ConsoleProgram {
 
+	private static final int lndex = 0;
 	private Scanner scan;
 	private int exitMenu = 4;
 	private List<Score> list = new ArrayList<Score>();
@@ -45,12 +46,15 @@ public class ScoreManager implements DAY14.ConsoleProgram {
 			printScore();
 			break;
 		case 3:
+			miduftScore();
 			break;
 		case 4:
 			break;
 		default:
 		}
 	}
+
+	
 
 	private void printScore() {
 		System.out.println("-----------------------");
@@ -159,5 +163,45 @@ public class ScoreManager implements DAY14.ConsoleProgram {
 		System.out.println("-----------------------");
 		System.out.println(str);
 		System.out.println("-----------------------");
+	}
+	private boolean miduftScore() {
+		System.out.println("-----------------------");
+		System.out.println("수정할 학생 정보를 입력하세요.");
+		//학년, 학기, 과목을 입력
+		System.out.print("학년 : ");
+		int grade = scan.nextInt();
+		System.out.print("학기 : ");
+		int term = scan.nextInt();
+		System.out.print("과목 : ");
+		String name = scan.next();
+
+		//학년, 학기, 과목이 같은 성적이 성적 리스트에 있으면 있다고 알림
+		Score tmp = new Score(grade, term, name);
+		int index = list.indexOf(tmp);
+		if(index < 0) {
+			System.out.println("-----------------------");
+			return false;
+		}
+		//중간,기말,수행평가을 입력
+		System.out.print("중간 : ");
+		int midterm = scan.nextInt();
+		System.out.print("기말 : ");
+		int finals = scan.nextInt();
+		System.out.print("수행 : ");
+		int pa = scan.nextInt();
+
+		//리스트에서 학년, 학기, 과목이 같은 성적 정보르 가져옴
+		tmp = list.get(index);
+		//가져온 성적 정보를 수정
+		tmp.setMidterm(midterm);
+		tmp.setFinals(finals);
+		tmp.setPerformanceAssessment(pa);
+		return list.add(tmp);
+		
+		/* tmp = new Score(grade, term, name, midterm, finals, pa);
+		 * list.remove(tmp);//기존에 있던 학생 정보를 삭제
+		 * list.add(tmp);//수정한 학생 정보를 추가
+		 * return true;
+		 *  */
 	}
 }
